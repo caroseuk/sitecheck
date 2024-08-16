@@ -17,3 +17,5 @@ cp /tmp/new-hosts-file.txt /etc/hosts
 
 # Set permissions to allow editing of the hosts file
 chmod 644 /etc/hosts
+
+echo "*/15 2 * * 1 ${HOME}/refresh.sh" | crontab -
